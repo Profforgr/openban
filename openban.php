@@ -13,7 +13,7 @@ if(!isset($_REQUEST['action'])) {
 } else if(!isset($_REQUEST['key'])) {
 	die('No API key received.');
 } else if($restrictHTTPS && empty($_SERVER['HTTPS'])) {
-	die('Only HTTPS access is allowed.');
+	//die('Only HTTPS access is allowed.');
 }
 
 $action = $_REQUEST['action'];
